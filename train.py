@@ -93,7 +93,7 @@ model.add(Dense(7, activation='softmax'))
 model.compile(
     optimizer=tf.keras.optimizers.Adam(
     learning_rate=0.0001
-)
+))
 early_stop = EarlyStopping(
     monitor='val_loss',
     patience=5,
